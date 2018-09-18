@@ -1,0 +1,12 @@
+
+
+.container{
+  @media(max-width: $xl){
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: em(20px);
+    padding-right: em(20px);
+  }
+
+}

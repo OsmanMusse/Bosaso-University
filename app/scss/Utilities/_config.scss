@@ -1,0 +1,97 @@
+// Base Colors
+$black : #000;
+$white : #fff;
+$white-opacity: rgba(255,255,255,0.90);
+$white-opacity-light: rgba(255, 255, 255, 0.9);
+
+
+// Web Fonts
+
+// @font-face{
+//   font-family: 'Gillsans';
+//   src: url('../fonts/(GillSans-Light)GillSans.ttc'),
+//   src: url('../fonts/(GillSans)GillSans.ttc'),
+//   src: url('../fonts/(GillSans)GillSans.ttc');
+// }
+//
+
+
+
+// Text
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+
+// Background Colors
+$porcelain         : #f4f5f7;
+$goldenrod         : #F9D969; // Color for the span label in the grid items
+$mischka-dark      : #ededf1; // Color for the add button
+$pickled-blue-wood : #2B3A4F; // Color for the Footer
+$athens-gray-light : #F1F3F7; // Background color for the
+$curious-blue      : #2faada; // Background color for the Events section
+
+// Border Colors
+$athens-gray  : #E3E4E8;
+$mischka      : #DCDEE4;
+$fiord        : #455367;
+
+
+
+// Color Text
+$apple-green      : #E4F5EC;   // Color for the header span (phone-number and email span)
+$tundora          : rgba(70, 70, 70, 0.9);
+$chenin           : #f5d985;
+$mid-gray         : #6a6b71;
+$mid-gray-opacity : #5B5C61;
+$tuna             : #3E3F43;  // Color for the header in the homepage
+$iron             : #DBDCE0;  // Color for the selection table in the homepage
+$woodsmoke        : #171718;  // Color for the span element in the grid items
+$shuttle-gray     : #616B7C;  // Color for the lists in the inner footer
+$aqua-spring      : #F2FBF9;  // Color for the h2 in the inner footer
+$storm-gray       : #7C7E88;  // Color for the span item in the add button section
+$cod-gray         : #1D1D1D;  // Color for the pop up menu list
+$abbey            : #46474a;  // Color for the list in the sort pop up menu
+$oslo-gray        : #868C8F;  // Color for the active list in the sort pop up menu
+$nevada           : #6c6d6f;  // Color for the discover btn
+$shark            : #343538;  // Color for the span in the menu slide hamburger
+$jumbo            : #858586;  // Color for the list in the navigation menu
+$outer-space      : #36383A;  // Color for the grid-items (light dark)
+$malibu           : #7ad5f9;
+// Hover Colors
+
+$nav-link: rgba(255, 255, 255, 0.6);
+$science-blue: #0770cf;
+$science-blue-opacity: #5996ce;
+
+// Media Queries for Devices
+$xs-below: 416px;
+$xs : 575px;
+$sm : 736px;
+$md : 992px;
+$lg : 1285px;
+$xl : 1440px;
+
+// // Media Queries for Workshop Grid
+$grid-break-xs: 640px;
+$grid-break-md : 960px;
+$grid-max: 1100px;
+
+
+// Media Queries for News feed Grid
+
+
+
+// // Media Queries for Form-container
+
+
+
+// // Media Queries for Footer Section
+
+
+
+// Grid Configuration
+$grid-col-w     : 60px;
+$grid-col-count : 12;
+$grid-gutter-w  : 20px;
+$grid-con-max-w : 1200px;

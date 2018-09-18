@@ -1,0 +1,81 @@
+#events-section{
+  background-image: url('../img/finger-bg.png');
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: $curious-blue;
+  padding: em(70px) em(0px);
+  text-align: center;
+
+  h1{
+    display: inline-flex;
+    position: relative;
+    color:$white;
+    font-size: em(35px);
+    font-weight: 600;
+    margin-bottom: em(60px);
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 40%;
+      background-color: $white;
+      width: 60px;
+      height: 5px;
+      border-radius: 10px;
+    }
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .event-container{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(1, 470px);
+    grid-column-gap: em(45px);
+  }
+
+  .event-grid{
+    background-color: $white;
+    border-radius: 6px;
+
+    .event-contain{
+      max-width: 220px;
+      text-align: left;
+      padding-left: em(35px);
+
+      img{
+        margin-right: em(10px);
+      }
+
+      span{
+        color: $mid-gray-opacity;
+        font-size: em(17px);
+        &.view-details{
+          display: flex;
+          color: $malibu;
+          margin-top: em(35px);
+        }
+
+        img{
+          margin-left: em(10px);
+        }
+      }
+
+      .event-list{
+        display: flex;
+        align-items: center;
+        margin-bottom: em(15px);
+      }
+    }
+
+    h3{
+      font-size: em(22px);
+      margin-bottom: em(19px);
+    }
+  }
+
+}

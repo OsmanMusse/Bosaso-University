@@ -1,0 +1,96 @@
+
+
+.btn-sm-grey{
+  position: relative;
+  max-width: 140px;
+  padding: em(16px) em(45px) em(16px) em(20px);
+  font-family: GillSans;
+  font-size: em(15px);
+  text-transform: uppercase;
+  color: $mid-gray-opacity;
+  border: 2px solid #E3E4E8;
+  background-color: transparent;
+
+  @media(max-width: $xs-below){
+    width:50%;
+    max-width: 207px;
+    border-left: none;
+    padding-right: em(0px);
+    padding-left: em(80px);
+    font-family: GillSans-semiBold;
+    font-size: em(14px);
+  }
+
+}
+
+
+.btn-add-grey{
+  font-family: Gillsans-semiBold;
+  color: #3F4044;
+  text-transform: uppercase;
+  width:300px;
+  height: 65px;
+  background-color: $mischka-dark;
+  border: 2px solid transparent;
+}
+
+.btn-add-black{
+  @include flex-center;
+  background-color: $tuna;
+  color: $iron;
+  text-transform: uppercase;
+  width: 154px;
+  margin: em(18px) auto em(0px) auto;
+  min-height: 60px;
+  font-family: Gillsans;
+  font-size: em(16px);
+}
+
+.btn-md-grey{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 155px;
+  margin-top: em(20px);
+  min-height: 56px;
+  background-color: transparent;
+  border: 2px solid #dddede;
+  color: $nevada;
+  font-size: em(14.5px);
+}
+
+
+
+.btn-lg-grey{
+  width: 276px;
+  padding: em(19px) em(80px) em(21px) em(10px);
+  font-family: GillSans;
+  font-size: em(15px);
+  text-transform: uppercase;
+  color: $mid-gray-opacity;
+  border: 2px solid #E3E4E8;
+  background-color: transparent;
+  position: relative;
+  &:focus{
+    outline:none;
+  }
+
+  @media(max-width: $xs-below){
+    width: 50%;
+    font-family: GillSans-semiBold;
+    font-size: em(14px);
+    height: 65px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+
+
+  span{
+    &.active{
+      color: $chenin;
+      font-family: GillSans-semiBold;
+      margin-left: em(10px);
+    }
+  }
+}

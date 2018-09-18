@@ -1,0 +1,40 @@
+
+#main-content{
+  padding: em(100px) 0 em(50px) 0;
+  text-align: center;
+
+  @media(max-width: $sm){
+    padding-left: em(20px);
+    padding-right: em(20px);
+  }
+
+  h1{
+    @extend %hdln-primary;
+    max-width: 610px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media(max-width: $xs){
+      font-size: em(21px);
+    }
+
+  }
+
+  p{
+    max-width: 906px;
+    margin: em(30px) auto;
+    width: 100%;
+
+      @media(max-width: $xs){
+        max-width: 320px;
+      }
+  }
+
+
+
+
+
+
+
+
+} // Closing Main Content

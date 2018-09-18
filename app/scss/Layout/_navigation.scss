@@ -1,0 +1,136 @@
+header{
+  display: flex;
+  align-items: center;
+  background-color: #1E2022;
+  height: 60px;
+  border: 1px solid $athens-gray;
+  font-family: GillSans, sans-serif;
+
+  .container{
+    height: 100%;
+    display: flex;
+  }
+
+  @media(max-width: $xs-below){
+    padding: 0 em(10px);
+  }
+
+  nav{
+    display: flex;
+    align-self: center;
+    width:100%;
+    height: 100%;
+
+    .list-contain{
+      display: flex;
+      align-items: center;
+      color: $jumbo;
+      font-size: em(17px);
+      margin-right: em(70px);
+
+
+
+      img{
+        margin-right: em(14px);
+      }
+
+      &:nth-of-type(2){
+        margin-right: em(160px);
+      }
+
+
+      &.social-media{
+        align-items: unset;
+        text-align: center;
+        margin-right: em(0px);
+      }
+
+      &.user-info{
+        align-items: unset;
+        text-align: center;
+        margin-right: em(0px);
+        margin-left: auto;
+
+        &.second{
+           margin-left: 0;
+        }
+
+        a{
+          align-items: center;
+          color: $jumbo;
+
+          li{
+            margin-left: em(18px);
+            margin-right: em(18px);
+          }
+        }
+      }
+
+
+      .border-lr{
+        display: flex;
+        border-left: 1px solid #353739;
+        border-right: 1px solid #353739;
+
+        &.second{
+          border-left: none;
+        }
+
+        &.third{
+          border-left: none;
+        }
+
+        &:nth-of-type(2){
+          background-color: red;
+        }
+
+        img{
+          margin-left: em(18px);
+          margin-right: em(18px);
+        }
+      }
+
+    }
+
+  }
+
+}
+
+/* Main Navigation */
+
+#main-navigation{
+  padding: em(10px) 0;
+
+  nav{
+    display: flex;
+
+    img{
+       margin-right: auto;
+    }
+
+
+    .nav-list{
+      display: flex;
+      align-items: center;
+
+      li{
+        font-size: em(17.5px);
+        margin-right: em(40px);
+        color: #54585a;
+
+        &:last-child{
+          margin-right: em(0px);
+        }
+      }
+
+      .arrow-down{
+        position: relative;
+        top: -1px;
+        margin-left: em(7px);
+      }
+
+    }
+
+  }
+
+} // Closing Main Navigation

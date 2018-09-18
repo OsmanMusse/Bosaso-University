@@ -1,0 +1,61 @@
+// ==========================================================================
+// Placeholders
+// ==========================================================================
+
+%hdln-primary{
+font-family: GillSans;
+font-size: em(46px);
+font-weight: normal;
+color: $white;
+line-height: 63px;
+
+@media(max-width: $xs){
+  font-size: em(25.5px);
+}
+
+@media(max-width: $xs-below){
+  font-size: em(21px);
+}
+
+}
+
+%hdln-secondary{
+  font-family: LucidaGrande;
+  font-size: em(25px);
+  font-weight: normal;
+  color: $white-opacity;
+
+  @media(max-width: $xs){
+    font-size: em(22px);
+  }
+}
+%btn-default{
+  background: $white;
+  border-radius: em(10px);
+  color: #3593EA;
+  font-family: LucidaGrande;
+  padding: em(11px) em(35px);
+  outline: 0;
+  border-style: none;
+}
+
+
+%btn-primary{
+  background: #3593C9;
+  border-radius: em(100px);
+  color: $white-opacity;
+  font-family: LucidaGrande;
+  padding: em(11px) em(35px);
+  outline: 0;
+  border-style: none;
+}
+
+%btn-secondary{
+  background: $white;
+  border-radius: em(100px);
+  color: rgba(57,53,53,0.82);
+  font-family: LucidaGrande;
+  padding: em(12px) em(38px);
+  outline: 0;
+  border-style: none;
+}
