@@ -9,11 +9,13 @@
     font-family: 'Work Sans', sans-serif;
     font-size: em(30px);
     font-weight: 500;
-    margin-bottom: em(60px);
+    margin-top: em(5px);
+    margin-bottom: em(35px);
     color: $white;
 
+
     &::before{
-      @include underline($curious-blue, 37%);
+      @include underline($curious-blue, 0, $width: 88px, $bd-r: 0px);
     }
   }
 
@@ -34,6 +36,16 @@
     width:210px;
   }
 
+
+  li{
+    display: flex;
+    color: #8F9091;
+    font-family: 'Work Sans', sans-serif;
+    font-size: em(17.5px);
+    font-weight: 500;
+    margin-bottom: em(16px);
+}
+
   .circle-contain{
     display: flex;
 
@@ -49,5 +61,21 @@
     }
 
   }
+
+  .contact-list{
+    margin-left: em(25px);
+    margin-right: em(10px);
+       img{
+         margin-right: em(10px);
+       }
+  }
+
+.newsletter{
+  margin-left: em(50px);
+
+  li{
+    max-width: 390px;
+  }
+}
 
 }
