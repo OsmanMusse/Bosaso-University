@@ -94,3 +94,27 @@
     }
   }
 }
+
+.btn-blue{
+  position: absolute;
+  height: 61px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: $curious-blue-light;
+  color: $white;
+  border-color: $curious-blue-light;
+  font-family: 'Maven Pro', sans-serif;
+  width: 135px;
+  right: 0;
+}
+
+
+.btn-blue-transparent {
+  background-color: transparent;
+  color: $curious-blue-light;
+  border-color: $curious-blue-light;
+  border-radius: 5px;
+  padding: em(13px) em(18px);
+  font-family: 'Maven Pro', sans-serif;
+  font-size: em(17px);
+}

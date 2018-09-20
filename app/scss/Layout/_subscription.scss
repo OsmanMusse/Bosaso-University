@@ -1,0 +1,57 @@
+
+#subscription-section{
+  background-color: #191919;
+  padding: em(140px) em(0px);
+
+ .container{
+   display: flex;
+   flex-direction: row;
+ }
+
+ .contain-header{
+   display: flex;
+   flex-direction: column;
+ }
+
+  h1{
+    color: $white;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+  }
+
+  .news-letter{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    color: $curious-blue-light;
+  }
+
+h4{
+  max-width: 480px;
+  color: $white;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: em(25px);
+  font-weight: 500;
+}
+
+.input-holder{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: em(18px);
+  &:before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    top: 21px;
+    left: 20px;
+    background-image: url('../img/envelope-icon.svg');
+    background-repeat: no-repeat;
+    z-index: 10000000;
+  }
+}
+
+
+} // Closing Subscription Section

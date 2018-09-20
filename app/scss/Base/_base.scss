@@ -56,20 +56,24 @@
 
   input[type="email"]{
     position: relative;
-    background-color: #484848;
+    background-color: $white;
     border-color: transparent;
     border-radius: 4px;
-    width: 390px;
-    min-height: 48px;
-    margin-right: em(-1px);
-    padding-left: 80px;
+    width: 435px;
+    min-height: 55px;
+    padding-left: em(70px);
+    border-radius: 7px;
 
+    &:focus{
+      outline: none;
+    }
 
 
     &::placeholder{
-      font-family: LucidaGrande;
-      font-weight: normal;
-      font-size: em(17px);
+      color: $santas-gray;
+      font-family: 'Work Sans', sans-serif;
+      font-size: em(19px);
+      font-weight: 400;
     }
 
 

@@ -15,14 +15,7 @@
     margin-bottom: em(60px);
 
     &:before{
-      content: '';
-      position: absolute;
-      top: 60px;
-      left: 40%;
-      background-color: $white;
-      width: 60px;
-      height: 5px;
-      border-radius: 10px;
+      @include underline;
     }
   }
 

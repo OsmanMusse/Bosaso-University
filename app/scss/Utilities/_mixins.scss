@@ -43,6 +43,19 @@ text-transform: uppercase;
 @content;
 }
 
+
+@mixin underline($bg-color: $white, $left:40%) {
+  content: '';
+  position: absolute;
+  background-color: $bg-color;
+  top: 60px;
+  left: $left;
+  width: 60px;
+  height: 5px;
+  border-radius: 10px;
+  @content;
+}
+
 // Hack for the animation
 .ajax-container{
   position: absolute;

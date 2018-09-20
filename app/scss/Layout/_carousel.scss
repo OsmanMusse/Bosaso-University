@@ -1,0 +1,69 @@
+
+#carousel-section{
+  text-align: center;
+  background-color: $athens-gray-light;
+  padding: em(140px) em(0px) em(0px) em(0px);
+  h1{
+    display: inline-flex;
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-size: em(37px);
+    font-weight: 600;
+    margin-bottom: em(50px);
+    color: $shark;
+
+    &::before{
+      @include underline($curious-blue, 37%);
+    }
+  }
+
+  .owl-carousel .owl-item img{
+    height: 247px;
+  }
+
+
+  .owl-nav{
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    margin: 0;
+
+  button{
+    background-color: #343739;
+    height: 71px;
+    width: 50px;
+    border-radius: 7px;
+    opacity: 0.9;
+
+    &:nth-of-type(1){
+      margin-right: auto;
+      span{
+        background-image: url('../img/arrow-left.svg');
+        background-repeat: no-repeat;
+        position: relative;
+        top: 7px;
+      }
+    }
+
+    &:nth-of-type(2){
+      span{
+        background-image: url('../img/arrow-right.svg');
+        background-repeat: no-repeat;
+        position: relative;
+        top: 7px;
+      }
+    }
+
+  }
+}
+
+.owl-dots{
+  display: none;
+}
+
+
+
+}

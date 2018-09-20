@@ -19,6 +19,7 @@ const del         = require('del');
 
 gulp.task("concatScripts", function(){
    return gulp.src([
+     'node_modules/slick-carousel/slick/slick.js',
      'app/js/jquery.js',
      'app/js/main.js'
    ])
@@ -42,6 +43,8 @@ gulp.task('minifyscripts', ['concatScripts'], function(){
 gulp.task('compileCss',['compileSass'], () => {
     return gulp.src([
       'node_modules/animate.css/animate.css',
+      'node_modules/slick-carousel/slick/slick.css',
+      'node_modules/slick-carousel/slick/slick-theme.css',
       'app/css/**'
   ])
   .pipe(concat('application.min.css'))

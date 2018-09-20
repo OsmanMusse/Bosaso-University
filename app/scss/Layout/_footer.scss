@@ -1,192 +1,53 @@
 
 #footer{
-  background-color: $pickled-blue-wood;
-  border-bottom: 2px solid #455367;
-  padding: em(65px) em(0px);
-  padding-bottom: em(0px);
+  background-color: $shark;
+  padding: em(130px) em(0px) em(190px);
 
-  @media(max-width: $xs-below){
-    display: none;
-  }
+  h1{
+    display: inline-flex;
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-size: em(30px);
+    font-weight: 500;
+    margin-bottom: em(60px);
+    color: $white;
 
-  .form-subscription{
-    padding-bottom: em(45px);
-
-    h1{
-      font-family: GillSans-Light;
-      color: $white-opacity;
-
-    }
-    p{
-      max-width: 331px;
-      color: $white-opacity;
-      font-family: Gillsans-light;
-      font-size: em(22px);
+    &::before{
+      @include underline($curious-blue, 37%);
     }
   }
 
-  .flex-container{
-    display: flex;
-    flex-wrap: wrap;
-
-    input{
-    background-color: white;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    padding-left: em(40px);
-    margin-top: em(34px);
-
-    &::placeholder{
-      color:#C9CACE;
-      font-family: GillSans-Light;
-      font-size: em(20.5px);
-    }
-
-    &:focus{
-      outline: none;
-    }
-  }
-
-   button{
-    background-image: linear-gradient(90deg, #48C29F 46%, #0BEEAC 100%);
-    font-family: GillSans-light;
+  h4{
+    color: $santas-gray;
+    font-family: 'Work Sans', sans-serif;
     font-size: em(17px);
-    color: #F2FBF9;
-    text-transform: uppercase;
-    width: 295px;
-    min-height: 54px;
-    border-color: transparent;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
-    cursor: pointer;
-
-    &:focus{
-      outline: none;
-    }
-   }
-
-   .button-connect{
-     display: flex;
-     flex-direction: row;
-     align-items: flex-end;
-     justify-content: center;
-}
-   }
-
-   .inner-footer{
-     border-top: 1.5px solid $fiord;
-     border-bottom: 1.5px solid $fiord;
-     padding-top: em(54px);
-     padding: em(55px) em(0px) em(120px) em(0px);
-
-     .container{
-       display: flex;
-       padding: 0;
-     }
-
-     .last-list{
-       margin-right: auto;
-     }
-
-     .address-list{
-       li{
-         max-width: 260px;
-         margin-left: auto;
-       }
-     }
-
-     .text-contain{
-       max-width: 260px;
-       h2{
-         color: $aqua-spring;
-         max-width: 261px;
-         text-align: left;
-         font-size: em(30px);
-         margin-top: 0;
-       }
-
-       li{
-         font-size: em(17px);
-       }
-
-       .list-contain{
-         width: fit-content;
-       }
-
-       .ltd-number{
-         text-align: right;
-       }
-
-     }
+    font-weight: 400;
+    max-width: 270px;
+  }
 
 
-
-     h3{
-       text-transform: uppercase;
-       font-size: em(16px);
-       color: #F2FBF9;
-       margin-bottom: em(25px);
-       margin-top: 0;
-     }
-
-     li{
-       color: $shuttle-gray;
-       margin-bottom: em(10px);
-       font-size: em(16px);
-     }
-   }
-
-   .outer-footer{
+  .row{
     display: flex;
-    align-items: center;
-    height: 100px;
+  }
 
-    .container{
+  .logo{
+    width:210px;
+  }
+
+  .circle-contain{
+    display: flex;
+
+    .social-media-circle{
       display: flex;
-      justify-content: space-between;
-
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $abbey;
+      border-radius: 50px;
+      background-color: $abbey;
+      margin-right: em(13px);
     }
 
-    .social-media{
-      display: flex;
-      align-items: center;
+  }
 
-      span{
-        margin-right: em(40px);
-        font-weight: 600;
-        text-transform: uppercase;
-        color: $white;
-      }
-
-      .social-contain{
-        align-items: center;
-
-        img{
-          margin-right: em(12px);
-        }
-
-        .twitter-icon{
-          width:23px;
-        }
-
-        .facebook-icon{
-          width:18px;
-        }
-
-        .youtube-icon{
-          width:26px;
-        }
-
-        .instagram-icon{
-          width:19px;
-        }
-
-      }
-    }
-     span{
-        color: $shuttle-gray;
-        font-size: em(16.5px);
-     }
-   }
-
-    }
+}
