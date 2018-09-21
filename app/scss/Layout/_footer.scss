@@ -7,7 +7,7 @@
     display: inline-flex;
     position: relative;
     font-family: 'Work Sans', sans-serif;
-    font-size: em(30px);
+    font-size: em(22px);
     font-weight: 500;
     margin-top: em(5px);
     margin-bottom: em(35px);
@@ -15,7 +15,8 @@
 
 
     &::before{
-      @include underline($curious-blue, 0, $width: 88px, $bd-r: 0px);
+      @include underline($curious-blue, $top:45px, $left: 0, $width:80px, $bd-r: 0px );
+
     }
   }
 
@@ -48,6 +49,7 @@
 
   .circle-contain{
     display: flex;
+    margin-top: em(33px);
 
     .social-media-circle{
       display: flex;
@@ -60,6 +62,27 @@
       margin-right: em(13px);
     }
 
+  }
+
+
+
+  .footer-grid{
+
+    li{
+      display: flex;
+     font-family: 'Work Sans', sans-serif;
+     font-size: em(16px);
+     font-weight: 500;
+     color: #8F9091;
+     margin-bottom: em(13px);
+    }
+    img{
+      margin-right: em(13px);
+    }
+  }
+
+  .subscribe{
+    max-width:  350px;
   }
 
   .contact-list{
