@@ -13,7 +13,7 @@
     color: $shark;
 
     &::before{
-      @include underline($curious-blue, 37%);
+      @include underline($curious-blue, $top: 50px);
     }
   }
 
