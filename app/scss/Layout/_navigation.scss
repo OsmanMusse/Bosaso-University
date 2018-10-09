@@ -1,0 +1,286 @@
+header{
+  display: flex;
+  align-items: center;
+  background-color: #1E2022;
+  height: 60px;
+  border: 1px solid $athens-gray;
+  font-family: GillSans, sans-serif;
+
+  @media(max-width: $xs){
+    display: none;
+  }
+
+  .container{
+    height: 100%;
+    display: flex;
+  }
+
+  @media(max-width: $xs-below){
+    padding: 0 em(10px);
+  }
+
+  nav{
+    display: flex;
+    align-self: center;
+    width:100%;
+    height: 100%;
+
+    .list-contain{
+      display: flex;
+      align-items: center;
+      color: $jumbo;
+      font-size: em(17px);
+      margin-right: em(70px);
+
+      &.email{
+        font-size: em(15px);
+      }
+
+      &.phone{
+        font-size: em(15px);
+        @media(max-width: 1240px){
+          margin-right: auto !important;
+        }
+      }
+
+
+
+      img{
+        margin-right: em(14px);
+      }
+
+      &:nth-of-type(2){
+        margin-right: em(160px);
+      }
+
+
+      &.social-media{
+        align-items: unset;
+        text-align: center;
+        margin-right: em(0px);
+      }
+
+      &.user-info{
+        align-items: unset;
+        text-align: center;
+        margin-right: em(0px);
+        margin-left: auto;
+
+        @media(max-width: 1240px){
+          display: none;
+        }
+
+        &.second{
+           margin-left: 0;
+        }
+
+        a{
+          align-items: center;
+          color: $jumbo;
+
+          li{
+            margin-left: em(18px);
+            margin-right: em(18px);
+          }
+        }
+      }
+
+
+      .border-lr{
+        display: flex;
+        border-left: 1px solid #353739;
+        border-right: 1px solid #353739;
+
+        &.second{
+          border-left: none;
+        }
+
+        &.third{
+          border-left: none;
+        }
+
+        &:nth-of-type(2){
+          background-color: red;
+        }
+
+        img{
+          margin-left: em(18px);
+          margin-right: em(18px);
+        }
+      }
+
+    }
+
+  }
+
+}
+
+/* Main Navigation */
+
+#main-navigation{
+  padding: em(10px) 0;
+
+  @media(max-width: $sm){
+    padding-left: em(13px);
+    padding-right: em(13px);
+  }
+
+  .container{
+    @media(max-width: $xs){
+      padding: 0;
+    }
+  }
+
+  nav{
+    display: flex;
+    @media(max-width: $sm){
+      align-items: center;
+    }
+
+    .hamburger-hide{
+
+      display: none;
+      width:45px;
+      height:45px;
+      border-radius: 6px;
+      background-color: $curious-blue-light;
+
+      @media(max-width: $sm){
+        display: flex;
+      }
+
+
+      img{
+        @media(max-width: $sm){
+          margin: 0 auto;
+        }
+      }
+
+    }
+
+    img{
+       margin-right: auto;
+
+       &.hide-sm{
+         display: flex;
+         @media(max-width: $sm){
+           display: none;
+         }
+
+       }
+
+       &.hide-lg{
+         display: none;
+
+         @media(max-width: $sm){
+           display: flex;
+           width: 150px;
+         }
+       }
+    }
+
+
+    .nav-list{
+      display: flex;
+      align-items: center;
+
+      @media(max-width: $xs){
+        display: none;
+      }
+
+
+      a{
+        margin-right: em(40px);
+      }
+
+      li{
+        font-size: em(17.5px);
+        margin-right: em(40px);
+        color: #54585a;
+
+        &:last-child{
+          margin-right: em(0px);
+        }
+      }
+
+      .arrow-down{
+        position: relative;
+        top: -1px;
+        margin-left: em(7px);
+      }
+
+    }
+
+  }
+
+  .nav-sm{
+    display: none;
+    position: relative;
+    height: 190px;
+    margin-top: em(35px);
+
+
+    .nav-list{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+
+
+      li{
+        font-size: em(17.5px);
+        margin-right: em(40px);
+        color: #54585a;
+        margin-bottom: em(15px);
+
+        &:last-child{
+          margin-right: em(0px);
+        }
+      }
+
+      .arrow-down{
+        position: relative;
+        top: -1px;
+        margin-left: em(7px);
+      }
+
+    }
+
+
+    .page-dropdown{
+      display: none;
+      flex-direction: column;
+      width: 90%;
+      height: 150px;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      z-index: 1000000;
+      box-shadow: 0 8px 20px rgba(55, 125, 255, 0.075);
+      background-color: white;
+      border-top: 3px solid #00CB54;
+      padding: 15px;
+
+      &.event {
+        display: flex;
+        top: 150px;
+      }
+
+      li{
+        display: inline-flex;
+        font-size: em(17px);
+        color: #54585a;
+        margin-bottom: em(15px);
+
+        .arrow-down{
+          position: relative;
+          top: -1px;
+          margin-left: 80%;
+        }
+      }
+
+    }
+  }
+
+} // Closing Main Navigation

@@ -1,0 +1,148 @@
+// ==========================================================================
+// Grid -- Using the Grid Layout
+// ==========================================================================
+
+
+#grid-section{
+  display: flex;
+  justify-content: center;
+  background-color: #F1F3F7;
+  padding: em(150px) em(0px) em(150px) em(0px);
+
+  h3{
+    color: $outer-space;
+    font-size: em(23px);
+    font-weight: 600;
+    margin-bottom: em(20px);
+  }
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 215px);
+  grid-column-gap: em(45px);
+  grid-row-gap: em(45px);
+
+  @media(max-width: 1014px){
+    grid-template-columns: repeat(2, 330px);
+    grid-template-rows: repeat(3, 215px);
+    justify-content: center;
+  }
+
+  @media(max-width: $sm){
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 215px);
+  }
+
+  .grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    padding-top: em(15px);
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 #CCCCCC;
+
+
+  }
+
+  .grid-contain{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .event-grid{
+    background-color: $white;
+  }
+}
+
+
+
+
+
+
+
+ // Calculating Grid Columns
+
+
+ @media(max-width: $xl){
+
+   @for $i from 1 through $grid-col-count{
+
+    $context : grid-config($grid-col-w, $grid-col-count, $grid-gutter-w);
+    $target  : ($grid-col-w * $i) + ($grid-gutter-w) * ($i - 1);
+
+    .col-xl-#{$i}{
+      flex: 0 0 percentage($target / $context);
+      max-width: percentage($target / $context);
+    }
+
+ }
+}
+
+
+ @media(max-width: $lg){
+
+ @for $i from 1 through $grid-col-count{
+
+   $context : grid-config($grid-col-w, $grid-col-count, $grid-gutter-w);
+   $target : ($grid-col-w * $i) + ($grid-gutter-w * ($i - 1));
+
+   .col-lg-#{$i}{
+     flex: 0 0 percentage($target / $context);
+     max-width: percentage($target / $context);
+   }
+ }
+
+ } // Closing Large Breakpoint
+
+
+ @media(max-width: $md){
+
+ @for $i from 1 through $grid-col-count{
+
+   $context : grid-config($grid-col-w, $grid-col-count, $grid-gutter-w);
+   $target : ($grid-col-w * $i) + ($grid-gutter-w * ($i - 1));
+
+   .col-md-#{$i}{
+     flex: 0 0 percentage($target / $context);
+     max-width: percentage($target / $context);
+   }
+ }
+
+} // Closing Medium Breakpoint
+
+
+
+@media(max-width: $sm){
+  @for $i from 1 through $grid-col-count{
+    $context : grid-config($grid-col-w, $grid-col-count, $grid-gutter-w);
+    $target : ($grid-col-w * $i) + ($grid-gutter-w * ($i - 1));
+
+    .col-sm-#{$i}{
+      flex: 0 0 percentage($target / $context);
+      max-width: percentage($target / $context);
+    }
+  }
+}
+
+
+@media(max-width: $xs){
+   @for $i from 1 through $grid-col-count{
+
+     $context: grid-config($grid-col-w, $grid-col-count, $grid-gutter-w);
+     $target : ($grid-col-w * $i) + ($grid-gutter-w * ($i - 1));
+
+     .col-xs-#{$i}{
+       flex: 0 0 percentage($target / $context);
+       max-width: percentage($target / $context);
+     }
+   }
+}
+
+// [class^="col-"]{
+//
+// }

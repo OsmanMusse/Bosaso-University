@@ -1,0 +1,111 @@
+
+#subscription-section{
+  background-color: #191919;
+  padding: em(140px) em(0px);
+  @media(max-width: 1014px){
+      padding: em(100px) em(0px);
+  }
+
+  @media(max-width: $xs){
+    padding-left: em(15px);
+    padding-right: em(15px);
+  }
+
+ .container{
+   display: flex;
+   flex-direction: row;
+
+   @media(max-width: 1014px){
+     flex-direction: column;
+   }
+
+   @media(max-width: $xs){
+     padding: em(0px);
+
+ }
+
+
+}
+
+ .contain-header{
+   display: flex;
+   flex-direction: column;
+ }
+
+  h1{
+    color: $white;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    @media(max-width: 1240px){
+      font-size: em(28px);
+    }
+
+
+   }
+
+  .news-letter{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    color: $curious-blue-light;
+  }
+
+h4{
+  max-width: 480px;
+  color: $white;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: em(25px);
+  font-weight: 500;
+  @media(max-width: 1240px){
+    max-width: 350px;
+    font-size: em(21px);
+    font-weight: 400;
+  }
+
+  @media(max-width: 1014px){
+    max-width: 600px;
+    margin-top: em(13px);
+    margin-bottom: em(50px);
+  }
+
+  @media(max-width: $xs){
+    max-width: 450px;
+  }
+
+}
+
+.input-holder{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: em(18px);
+
+  @media(max-width: 1014px){
+    margin-left: em(0px);
+    margin-right: auto;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    top: 21px;
+    left: 20px;
+    background-image: url('../img/envelope-icon.svg');
+    background-repeat: no-repeat;
+    z-index: 10000000;
+
+    @media(max-width: 1240px){
+      background-size: 75%;
+      top: 23px
+    }
+
+
+
+  }
+}
+
+
+} // Closing Subscription Section

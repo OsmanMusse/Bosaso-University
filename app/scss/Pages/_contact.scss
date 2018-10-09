@@ -1,0 +1,265 @@
+#contact-page{
+    display: flex;
+    align-items: center;
+    background-image: url('../img/contact-img.png');
+    background-repeat: no-repeat;
+    height: 60px;
+    background-size: 100%;
+    padding: em(65px) em(0px);
+
+
+
+
+    @media(max-width: $xs){
+      padding: em(45px) em(0px);
+
+    }
+
+
+    .wrap-overlay{
+      @media(max-width: $xs-below){
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+ .container{
+
+   padding-left: em(110px);
+   padding-right: em(20px);
+
+   @media(max-width: $xs){
+     padding: em(0px) em(25px);
+   }
+
+   @media(max-width: $xs-below){
+     padding: 0;
+   }
+   h4{
+     color: $white;
+     font-size: em(30px);
+     font-family: "Maven Pro", sans-serif;
+     font-weight: 500;
+
+     @media(max-width: $xs){
+       margin-top: em(0px);
+       margin-bottom: em(10px);
+     }
+   }
+ }
+
+
+
+    .event-contain{
+      display: inline-flex;
+
+
+      span{
+        font-family: "Work Sans", sans-serif;
+        color: $white-opacity-light;
+        &.home {
+          color: $white;
+          font-size: em(17px);
+        }
+      }
+
+
+      img{
+        margin: em(0px) em(13px);
+      }
+    }
+
+
+
+}
+
+
+
+
+
+.outer-jumbotron{
+  padding: em(40px) em(0px);
+
+  @media(max-width: $xs){
+    padding-left: em(30px);
+    padding-right: em(30px);
+  }
+
+  .container{
+
+    @media(max-width: $xs){
+      display: flex;
+      flex-direction: column;
+      padding: em(0px);
+    }
+  }
+
+
+  .green-circle{
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    background-color: $curious-blue;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: em(20px);
+  }
+
+  .first-column{
+    display: inline-flex;
+    align-items: center;
+
+    &:nth-of-type(2){
+      margin: em(0px) em(195px);
+
+      @media(max-width: 1240px){
+        margin: em(0px) em(55px);
+      }
+
+      @media(max-width: 1014px){
+        margin-bottom: em(15px);
+      }
+
+      @media(max-width: $xs){
+        margin: em(20px) em(0px);
+      }
+
+    }
+
+    h4{
+      font-family: "Maven Pro", sans-serif;
+      font-size: em(20px);
+      font-weight: 500;
+      margin-bottom: em(10px);
+    }
+
+    span{
+      font-family: "Work Sans", sans-serif;
+      font-size: em(17px);
+      color: #606065;
+    }
+
+
+  }
+}
+
+
+#contact-form{
+   display: flex;
+   justify-content: center;
+   background-color: $athens-gray-light;
+   padding: em(90px) em(0px);
+   flex-direction: column;
+
+   p{
+       font-family: "Work Sans", sans-serif;
+       font-weight: 400;
+       color: #606065;
+       margin-bottom: em(50px);
+   }
+
+  h1{
+    display: inline-flex;
+    position: relative;
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 500;
+    font-size: em(29px);
+    color: $shark;
+    margin-bottom: em(60px);
+    align-self: center;
+
+
+    &:before{
+      @include underline($bg-color: $curious-blue);
+    }
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    @media(max-width: $xs){
+      padding: em(0px);
+    }
+  }
+
+   .form-outer{
+     background-color: $white;
+     border-radius: 7px;
+     padding: em(50px);
+
+     @media(max-width: 1240px){
+       padding: em(0px);
+     }
+
+     @media(max-width: 1014px){
+       padding: em(40px) em(0px);
+     }
+
+   }
+
+  form{
+    padding: em(0px) em(85px);
+
+    @media(max-width: 1240px){
+      padding: em(0px) em(65px);
+    }
+
+    input{
+      font-family: "Work Sans", sans-serif;
+      border-radius: 4px;
+      border: 1px solid $mischka;
+      padding: em(13px);
+      width: 260px;
+
+      &:nth-of-type(2) {
+        margin: em(0px) em(20px);
+        @media(max-width: $xs){
+          margin: em(20px) em(0px);
+        }
+      }
+
+      @media(max-width: 1240px){
+        width: 230px;
+      }
+
+      @media(max-width: 1014px){
+        width: 160px;
+      }
+
+      @media(max-width: $xs){
+        width: 100%;
+      }
+
+    }
+
+    textarea{
+      font-family: "Work Sans", sans-serif;
+      border-radius: 4px;
+      border: 1px solid $mischka;
+      padding: em(13px);
+      width: 96%;
+      height: 170px;
+      margin-top: em(20px);
+
+      @media(max-width: $xs){
+        width: 100%;
+      }
+    }
+
+    button{
+      &.btn-blue{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 4px;
+        margin-top: em(25px);
+        width: 180px;
+      }
+    }
+
+  }
+
+}

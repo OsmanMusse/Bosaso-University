@@ -1,0 +1,75 @@
+#achivenment-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../img/achivement-bg.png');
+  background-repeat: no-repeat;
+  height: 300px;
+
+  @media(max-width: 1014px){
+    height: 350px;
+  }
+
+  @media(max-width: $xs){
+    height: 600px;
+    background-image: url('../img/achivement-small.png');
+  }
+
+  .container{
+      padding-bottom: em(15px);
+      @media(max-width: $xs){
+        padding: 0;
+      }
+  }
+
+  .achievement-grid{
+    display: grid;
+    max-width: 1059px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4,245px);
+    grid-column-gap: em(51px);
+    justify-content: center;
+
+    @media(max-width: 1240px){
+      grid-column-gap: em(0px);
+    }
+
+    @media(max-width: 1014px){
+      grid-template-columns: repeat(2,245px);
+      grid-column-gap: em(110px);
+      grid-row-gap: em(15px);
+    }
+
+    @media(max-width: $xs){
+      grid-template-columns: repeat(1,245px);
+    }
+
+    .grid{
+      text-align: center;
+      h4{
+        color: $curious-blue;
+        font-size: em(36px);
+        font-family: 'Maven Pro', sans-serif;
+        margin-bottom: em(5px);
+
+        @media(max-width: 1240px){
+          font-size: em(30px);
+        }
+
+      }
+
+      span{
+        font-family: 'Work Sans', sans-serif;
+        font-size: em(25px);
+        font-weight: semi-Bold;
+        color: $white;
+
+        @media(max-width: 1240px){
+          font-size: em(22px);
+        }
+
+      }
+    }
+  }
+
+}

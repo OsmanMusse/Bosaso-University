@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="8px" viewBox="0 0 13 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>right-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-709.000000, -96.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Main-Navigation" transform="translate(0.000000, 61.000000)">
+                <g id="Nav-items" transform="translate(650.000000, 29.000000)">
+                    <g id="Home-item">
+                        <g id="right-arrow" transform="translate(64.785714, 10.285714) rotate(90.000000) translate(-64.785714, -10.285714) translate(61.285714, 3.785714)">
+                            <path d="M0.763492063,11.8960317 C0.680952381,11.9785714 0.577777778,12.0198413 0.464285714,12.0198413 C0.350793651,12.0198413 0.247619048,11.9785714 0.165079365,11.8960317 C1.5890067e-15,11.7309524 1.5890067e-15,11.4626984 0.165079365,11.297619 L5.42698413,6.03571429 L0.165079365,0.773809524 C8.5348395e-16,0.608730159 8.5348395e-16,0.34047619 0.165079365,0.175396825 C0.33015873,0.0103174603 0.598412698,0.0103174603 0.763492063,0.175396825 L6.32460317,5.73650794 C6.48968254,5.9015873 6.48968254,6.16984127 6.32460317,6.33492063 L0.763492063,11.8960317 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

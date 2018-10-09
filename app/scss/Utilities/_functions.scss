@@ -1,0 +1,16 @@
+
+
+// Calculate em values
+
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}
+
+
+
+// Calulating Grid Configuration
+
+@function grid-config($grid-col-w, $grid-col-count, $grid-gutter-w){
+	 $grid-config : ($grid-col-w * $grid-col-count) + ($grid-gutter-w * ($grid-col-count - 1));
+	 @return $grid-config;
+}

@@ -1,0 +1,53 @@
+
+  h1{
+    font-size: em(40px);
+    font-family: GillSans;
+    font-weight: 100;
+  }
+
+
+
+  h2{
+    font-size: em(23px);
+    font-family: GillSans;
+    font-weight: 100;
+  }
+
+
+  h3{
+    font-family: GillSans;
+    font-weight: 100;
+    font-size: em(20px);
+  }
+
+  h4{
+  font-size: em(15px);
+  }
+
+  h6{
+  font-size: em(13px);
+  margin-bottom: em(8px);
+  }
+
+  p{
+  font-family: GillSans;
+  font-weight:300;
+  font-size: em(17px);
+  }
+
+  span{
+    font-family: GillSans;
+    text-align: center;
+    font-size: em(15px);
+    letter-spacing: em(0.3px);
+  }
+
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    font-family: GillSans;
+    list-style-type: none;
+    font-weight: normal;
+  }

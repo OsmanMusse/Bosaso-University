@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="19px" viewBox="0 0 30 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>menu (3)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-323.000000, -68.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="menu-(3)" transform="translate(323.000000, 68.000000)">
+                <path d="M29.4230859,1 L0.576914062,1 C0.25828125,1 0,0.776152752 0,0.5 C0,0.223847248 0.25828125,0 0.576914062,0 L29.4230859,0 C29.7417187,0 30,0.223847248 30,0.5 C30,0.776152752 29.7417187,1 29.4230859,1 Z" id="Shape"></path>
+                <path d="M29.4230859,10 L0.576914062,10 C0.25828125,10 0,9.77615275 0,9.5 C0,9.22384725 0.25828125,9 0.576914062,9 L29.4230859,9 C29.7417187,9 30,9.22384725 30,9.5 C30,9.77615275 29.7417187,10 29.4230859,10 Z" id="Shape"></path>
+                <path d="M29.4230859,19 L0.576914062,19 C0.25828125,19 0,18.7761528 0,18.5 C0,18.2238472 0.25828125,18 0.576914062,18 L29.4230859,18 C29.7417187,18 30,18.2238472 30,18.5 C30,18.7761528 29.7417187,19 29.4230859,19 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,151 @@
+
+#footer{
+  background-color: $shark;
+  padding: em(130px) em(0px) em(190px);
+
+        .main{
+          margin-right: em(45px);
+
+          @media(max-width: $xs){
+            margin-bottom: em(70px);
+            margin-right: em(0px);
+          }
+        }
+
+        .container{
+          @media(max-width: $xs){
+            padding: 0;
+          }
+        }
+
+  h1{
+    display: inline-flex;
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-size: em(22px);
+    font-weight: 500;
+    margin-top: em(5px);
+    margin-bottom: em(35px);
+    color: $white;
+
+
+    &::before{
+      @include underline($curious-blue, $top:45px, $left: 0, $width:80px, $bd-r: 0px );
+    }
+  }
+
+  h4{
+    color: $santas-gray;
+    font-family: 'Work Sans', sans-serif;
+    font-size: em(17px);
+    font-weight: 400;
+    max-width: 270px;
+
+    @media(max-width: 1014px){
+      font-size: em(16px);
+    }
+
+    @media(max-width: $xs){
+      max-width: inherit;
+    }
+  }
+
+
+  .row{
+    display: flex;
+    @media(max-width: 1014px){
+      flex-wrap: wrap;
+    }
+
+    @media(max-width: $xs){
+      padding: em(0px) em(20px);
+    }
+  }
+
+  .logo{
+    width:210px;
+  }
+
+
+  li{
+    display: flex;
+    color: #8F9091;
+    font-family: 'Work Sans', sans-serif;
+    font-size: em(17.5px);
+    font-weight: 500;
+    margin-bottom: em(16px);
+}
+
+  .circle-contain{
+    display: flex;
+    margin-top: em(33px);
+
+    .social-media-circle{
+      display: flex;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $abbey;
+      border-radius: 50px;
+      background-color: $abbey;
+      margin-right: em(13px);
+    }
+
+  }
+
+
+  .contact-list{
+    margin-left: em(25px);
+    margin-right: em(10px);
+       img{
+         margin-right: em(10px);
+       }
+  }
+
+.newsletter{
+  margin-left: em(50px);
+
+  li{
+    max-width: 390px;
+  }
+}
+
+
+.footer-grid{
+
+    margin-right: em(10px);
+
+    @media(max-width: $xs){
+      margin-right: em(0px);
+    }
+
+  li{
+    display: flex;
+   font-family: 'Work Sans', sans-serif;
+   font-size: em(16px);
+   font-weight: 500;
+   color: #8F9091;
+   margin-bottom: em(13px);
+  }
+  img{
+    margin-right: em(13px);
+  }
+}
+
+.quick-link{
+  @media(max-width: 1014px){
+      margin-right: auto;
+      margin-top: em(60px);
+  }
+}
+
+.newsletter-grid{
+   @media(max-width: 1014px){
+     margin-top: em(60px);
+   }
+}
+.subscribe{
+  max-width:  350px;
+}
+
+}
